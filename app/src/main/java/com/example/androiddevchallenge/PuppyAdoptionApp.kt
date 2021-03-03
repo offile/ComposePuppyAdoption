@@ -35,8 +35,7 @@ fun PuppyAdoptionApp() {
         ) {
             DetailScreen(
                 id = it.arguments!!.getString("id")!!,
-                navController = navController
-            )
+                navController = navController)
         }
     }
 }
