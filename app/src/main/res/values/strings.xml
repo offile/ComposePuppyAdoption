@@ -9,5 +9,15 @@
       or implied. See the License for the specific language governing permissions and limitations under
       the License.
       -->
-    <string name="app_name">AndroidDevChallenge</string>
+    <string name="app_name">小狗领养</string>
+
+    <string name="adoption_name">狗狗名字：%s</string>
+    <string name="adoption_age">狗狗年龄：%s</string>
+    <string name="adoption_from">地址：%s</string>
+
+    <string name="adoption_detail">
+%s，女孩，目前%d岁。是我们当时在工地救助的狗狗跟着我们快一年的时间，目前已经打过疫苗、驱虫，身体状况非常好，活泼开朗。
+
+但是由于我们今年开始要准备创业了，会在北京和南方某城市来回奔波，所以实在有心无力，没办法好好陪伴和照顾狗狗的成长了。所以现在想给%s找一个新主人，最好是时间充足，可以全心全意陪伴狗狗成长的。
+有意者可以加微信xxxxxxxxxx 电话 12345678900</string>
 </resources>
