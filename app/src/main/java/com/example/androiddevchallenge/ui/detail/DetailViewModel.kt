@@ -1,6 +1,9 @@
 package com.example.androiddevchallenge.ui.detail
 
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.liveData
 import com.example.androiddevchallenge.data.AdoptionRepository
 import com.example.androiddevchallenge.data.State
 import com.example.androiddevchallenge.model.Adoption
@@ -12,7 +15,6 @@ class DetailViewModel(
     private val _state = MutableLiveData<State>()
     val state: LiveData<State> = _state
 
-    private val _adoption = MutableLiveData<Adoption>()
     val adoption: LiveData<Adoption> = liveData {
         _state.value = State.Loading
         val data = repository.getAdoption(id)
