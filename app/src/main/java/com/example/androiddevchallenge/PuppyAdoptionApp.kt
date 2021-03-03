@@ -16,7 +16,7 @@ fun PuppyAdoptionApp() {
         composable("home") { HomeScreen(navController) }
         composable(
             "detail/{id}",
-            arguments = listOf(navArgument("id"){ type = NavType.StringType })
+            arguments = listOf(navArgument("id") { type = NavType.StringType })
         ) {
             DetailScreen(
                 id = it.arguments!!.getString("id")!!,
