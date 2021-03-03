@@ -17,7 +17,7 @@ package com.example.androiddevchallenge.model
 
 import androidx.annotation.DrawableRes
 
-data class Adoption (
+data class Adoption(
     val id: String,
     val name: String,
     val age: Int,

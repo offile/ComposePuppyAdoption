@@ -32,13 +32,13 @@ class HomeViewModel constructor(
     val state: LiveData<State> = _state
 
     private val _adoptionList = MutableLiveData<List<Adoption>>()
-    val adoptionList: LiveData<List<Adoption>>  = _adoptionList
+    val adoptionList: LiveData<List<Adoption>> = _adoptionList
 
     init {
         loadData()
     }
 
-    fun loadData(){
+    fun loadData() {
         viewModelScope.launch {
             _state.value = State.Loading
             _adoptionList.value = repository.getAdoptions()

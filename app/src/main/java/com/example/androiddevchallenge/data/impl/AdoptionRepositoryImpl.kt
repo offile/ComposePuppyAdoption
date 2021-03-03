@@ -28,5 +28,4 @@ class AdoptionRepositoryImpl : AdoptionRepository {
     }
 }
 
-
 val adoptionRepository: AdoptionRepository = AdoptionRepositoryImpl()

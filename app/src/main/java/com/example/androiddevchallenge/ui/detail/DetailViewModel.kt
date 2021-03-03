@@ -33,10 +33,10 @@ class DetailViewModel(
     val adoption: LiveData<Adoption> = liveData {
         _state.value = State.Loading
         val data = repository.getAdoption(id)
-        if(data != null){
+        if (data != null) {
             emit(data)
             _state.value = State.Success
-        }else{
+        } else {
             _state.value = State.Fail
         }
     }

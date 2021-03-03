@@ -19,12 +19,12 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.Card
+import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
-import androidx.compose.material.Icon
-import androidx.compose.material.Card
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -44,7 +44,7 @@ import com.example.androiddevchallenge.model.Adoption
 fun DetailScreen(
     id: String,
     navController: NavHostController
-){
+) {
     val detailViewModel = DetailViewModel(adoptionRepository, id)
     val state: State? by detailViewModel.state.observeAsState(State.Nothing)
     val data: Adoption? by detailViewModel.adoption.observeAsState()
@@ -60,15 +60,15 @@ fun DetailScreen(
                 }
             )
         },
-    ){
-        if(state == State.Success){
+    ) {
+        if (state == State.Success) {
             SuccessContent(data!!)
         }
     }
 }
 
 @Composable
-fun SuccessContent(adoption: Adoption){
+fun SuccessContent(adoption: Adoption) {
     val modifier = Modifier.padding(top = 10.dp)
     Column(modifier = Modifier.padding(10.dp)) {
         Card(elevation = 5.dp) {
