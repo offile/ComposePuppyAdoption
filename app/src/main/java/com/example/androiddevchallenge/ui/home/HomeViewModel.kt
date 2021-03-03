@@ -1,6 +1,9 @@
 package com.example.androiddevchallenge.ui.home
 
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.androiddevchallenge.data.AdoptionRepository
 import com.example.androiddevchallenge.data.State
 import com.example.androiddevchallenge.model.Adoption
