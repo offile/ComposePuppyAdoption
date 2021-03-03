@@ -11,7 +11,7 @@ It's a puppy adoption app
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
 <!--- What are you especially proud of? -->
-
+Starting to learn Compose
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
