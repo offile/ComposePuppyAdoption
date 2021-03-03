@@ -87,5 +87,6 @@ val adoptionData = listOf(
         "毛毛",
         1,
         "深圳",
-        R.drawable.img_9)
+        R.drawable.img_9
+    )
 )

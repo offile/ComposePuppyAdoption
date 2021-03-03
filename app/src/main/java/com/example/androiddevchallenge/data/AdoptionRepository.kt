@@ -21,4 +21,5 @@ interface AdoptionRepository {
     suspend fun getAdoption(id: String): Adoption?
 
     suspend fun getAdoptions(): List<Adoption>
+
 }
